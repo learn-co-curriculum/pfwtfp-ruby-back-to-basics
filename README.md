@@ -22,7 +22,7 @@ until a certain condition is met.
   - While Loops
   - Until Loops
 
-### Review Conditionals and Logic
+## Review Conditionals and Logic
 
 The term 'conditionals' refers to a set of expressions: if statements, ternary
 operators, statement modifiers, and case statements. Think of a real life
@@ -59,9 +59,9 @@ as 'truthy'. This includes empty hashes and arrays and _any_ number or integer,
 including `0`. The only values that evaluate to false on their own are `false`
 and `nil`.
 
-### Conditionals
+## Conditionals
 
-#### If Statements
+### If Statements
 
 If statements allow us to check if a certain logic condition is true, and if it
 is, perform a certain action contained within the code block.
@@ -73,7 +73,7 @@ if money > 10
 end
 ```
 
-#### Else Statements
+### Else Statements
 
 What happens when we want to check more than one condition? That's where
 else comes in.
@@ -87,7 +87,7 @@ else
 end
 ```
 
-#### Elsif
+### Elsif
 
 We all know that with lunch options, we like options. Two choices just
 aren't going to cut it. How do we set up more options?
@@ -104,7 +104,7 @@ else
 end
 ```
 
-#### Ternary Operators
+### Ternary Operators
 
 Ternary operators are a shorthand way of expressing an if/else statement
 on one line. This helps shorten the amount of code written. Below, we've
@@ -117,7 +117,7 @@ happy_hour = true ? market_price * .5 : market_price
 The ternary operator is most useful in cases where the conditions are
 simple, and there are no more than 2 possible outcomes.
 
-#### Statement Modifiers
+### Statement Modifiers
 
 Statement modifiers are a conditional statement that comes at the end of a
 statement. It will execute the line of code _if_ the conditional evaluates
@@ -128,7 +128,7 @@ hot = true
 print "Keep oven at 350 degrees" if hot
 ```
 
-#### Unless
+### Unless
 
 The `unless` statement is structured like an `if` statement, but in reverse: The
 code block will execute if the conditional evaluates to _false_ rather than true:
@@ -163,7 +163,7 @@ print "Keep oven at 350 degrees" if hot
 print "Keep refrigerated or on ice" unless hot
 ```
 
-#### Case Statements
+### Case Statements
 
 Case statements are similar to if statements in that they allow you to
 control the flow of your program, and allow you to test multiple
@@ -198,13 +198,13 @@ will produce the following result:
 high school age
 ```
 
-### Review Looping
+## Review Looping
 
 Loops are a way to tell our program to perform a certain part of the code a set
 number of times until a condition is met. This condition can be hard coded into
 the method, or more commonly set by the program itself.
 
-#### `loop`
+### `loop`
 
 The code is executed in a loop block:
 
@@ -230,7 +230,7 @@ end
 This loop will run 5 times before the statement modifier `if i > 4` evaluates to
 true and `break` is executed.
 
-#### `while`
+### `while`
 
 Using the comparison operators in our loops works, but it is not as clean as a
 process as we'd like, and there are much better ways to write them. The `while`
@@ -256,7 +256,7 @@ Why 19 and not 20? On the very last loop iteration, `i` is incremented to 20,
 which causes `i < 20` to evaluate to false, breaking the loop before `puts i`
 is executed again.
 
-#### Until Loops
+### Until Loops
 
 Until loops are similar to while loops, but instead are the inverse. Until loops
 will keep executing until a specific condition is true. Another way to think
